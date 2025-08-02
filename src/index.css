@@ -1,1 +1,39 @@
 @import "tailwindcss";
+/* Custom Theme Variables */
+/* :root {
+  --primary-green: #1E6F5C;
+  --accent-blue: #3B9AE1;
+  --soft-cream: #F8F9FA;
+  --font-family: 'Poppins', sans-serif;
+} */
+
+:root {
+  --primary-green: #3A9679;
+  --accent-blue: #3BB9D1;
+  --accent-yellow: #FACC15;
+  --soft-green-bg: #F2FDF7;
+  --soft-blue-bg: #EDF8FA;
+  --soft-cream: #F9F9F6;
+}
+
+body {
+  background-color: var(--soft-green-bg);
+  font-family: 'Inter', sans-serif;
+}
+/* body {
+  @apply bg-[var(--soft-cream)] text-gray-800 font-sans;
+  font-family: var(--font-family);
+} */
+
+.nav-link {
+  @apply hover:text-[var(--primary-green)] transition;
+}
+
+.btn-primary {
+  @apply px-6 py-3 rounded-full text-white font-semibold shadow-md transition;
+  background-color: var(--accent-blue);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-green);
+}
