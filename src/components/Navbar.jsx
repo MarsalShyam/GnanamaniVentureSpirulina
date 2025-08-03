@@ -4,7 +4,7 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="w-full bg-[var(--soft-cream)] fixed top-0 left-0 shadow-md z-50">
+    <nav className="w-full bg-green-200  fixed top-0 left-0 shadow-md z-50">
       <div className="max-w-7xl mx-auto flex justify-between items-center py-4 px-6">
         <div className="text-3xl font-bold text-[var(--primary-green)]">SpiruLife</div>
 
