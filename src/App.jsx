@@ -11,6 +11,7 @@ import ProductShowcaseSection from './components/ProductShowcaseSection'
 import DifferenceSection from './components/DifferenceSection'
 import NewsSection from './components/NewsSection'
 import FooterSection from './components/FooterSection'
+import HeroSection2 from './components/HeroSection2'
 
 function App() {
   
@@ -19,8 +20,8 @@ function App() {
     <>
      
       <Navbar />
-      <HeroSection />
-      <AboutSection/>
+      <HeroSection/>
+       <AboutSection/>
       <QualitySection/>
       <CertificationsSection/>
       <ProductShowcaseSection/>
@@ -31,7 +32,7 @@ function App() {
         (Next Sections Will Be Built Here...)
       </div> */}
     
-
+        <div className='w-full bg-amber-700'>ram is a good booy</div>
     </>
   )
 }

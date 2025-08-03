@@ -1,0 +1,30 @@
+.swiper-button-prev,
+.swiper-button-next {
+  color: white !important;
+  /* background: rgba(0, 0, 0, 0.3); */
+  padding: 0.5rem;
+  border-radius: 50%;
+  font-size: 0.8rem;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  /* background: rgba(0, 0, 0, 0.6); */
+  color: yellowgreen !important;
+}
+
+
+
+.swiper {
+  height: 100vh; /* Default for desktop */
+}
+
+@media (max-width: 768px) {
+  .swiper {
+    height: auto; /* Let height adjust dynamically on smaller screens */
+  }
+  .swiper-button-next, .swiper-button-prev {
+    font-size: 1rem; /* Larger font size for desktop */
+    padding: 1rem; /* Increased padding */
+  }
+}

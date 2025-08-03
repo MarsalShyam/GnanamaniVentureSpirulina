@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 
 export default function AboutSection() {
   return (
-    <section className="w-full bg-white bg-[var(--soft-blue-bg) py-16 px-4 sm:px-6 md:px-12 lg:px-16 xl:px-20 flex flex-col md:flex-row items-center justify-center gap-10">
+    <section className="border border-amber-400 w-full bg-white bg-[var(--soft-blue-bg) py-16 px-4 sm:px-6 md:px-12 lg:px-16 xl:px-20 flex flex-col md:flex-row items-center justify-center gap-10">
       
       {/* Left: YouTube Video Embed */}
       <motion.div 
