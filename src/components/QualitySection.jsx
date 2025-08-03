@@ -30,7 +30,7 @@ export default function QualitySection() {
   ];
 
   return (
-    <section className="w-full bg-[var(--soft-blue-bg)] py-16 px-4 sm:px-6 md:px-12 lg:px-16 xl:px-20">
+    <section className="w-full bg-yellow-50 bg-[var(--soft-blue-bg)] py-16 px-4 sm:px-6 md:px-12 lg:px-16 xl:px-20">
       <div className="text-center mb-12">
         <h2 className="text-3xl md:text-4xl font-extrabold text-[var(--primary-green)]">Our Quality Assurance Systems</h2>
         <p className="mt-4 text-gray-600 md:text-lg">We adhere to the highest global standards ensuring quality & consistency.</p>

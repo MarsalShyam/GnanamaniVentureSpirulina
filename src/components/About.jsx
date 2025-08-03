@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 
 export default function AboutSection() {
   return (
-    <section className="border border-amber-400 w-full bg-white bg-[var(--soft-blue-bg) py-16 px-4 sm:px-6 md:px-12 lg:px-16 xl:px-20 flex flex-col md:flex-row items-center justify-center gap-10">
+    <section className=" w-full bg-green-100 bg-[var(--soft-blue-bg) py-16 px-4 sm:px-6 md:px-12 lg:px-16 xl:px-20 flex flex-col md:flex-row items-center justify-center gap-10">
       
       {/* Left: YouTube Video Embed */}
       <motion.div 
@@ -14,7 +14,7 @@ export default function AboutSection() {
         <iframe
           width="100%"
           height="100%"
-          src="https://www.youtube.com/embed/YE3qUddEqU8"  // <-- Replace with your Video ID
+          src="https://www.youtube.com/embed/UfG8Cbpw2Po?si=nHJ-IUkFoFZMLugE"  // <-- Replace with your Video ID
           title="About Spirulina Manufacturing"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
