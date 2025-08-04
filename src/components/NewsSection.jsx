@@ -3,57 +3,130 @@ import { Autoplay, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-export default function NewsSection() {
-  const newsItems = [
+export default function EventGallery() {
+  const events = [
     {
-      title: 'Participated in Global Spirulina Expo 2025',
-      image: 'https://images.unsplash.com/photo-1581090700227-1e37b190418e', // Replace with your event images
+      title: 'Global Spirulina Expo 2025',
+      image: 'https://images.unsplash.com/photo-1581090700227-1e37b190418e',
     },
     {
-      title: 'Launched New Blue Spirulina Product Line',
+      title: 'New Product Launch',
       image: 'https://images.unsplash.com/photo-1620311081423-982b118c2e56',
     },
     {
-      title: 'Awarded ISO 22000 Certification for Food Safety',
+      title: 'ISO Certification Award',
       image: 'https://images.unsplash.com/photo-1603570411086-e3a4e9b98db6',
     },
     {
-      title: 'Sustainability Drive: 100% Eco-Friendly Packaging',
+      title: 'Eco Packaging Initiative',
       image: 'https://images.unsplash.com/photo-1600891964599-f61ba0e24092',
     },
+    {
+      title: 'Sustainable Farming Conference',
+      image: 'https://images.unsplash.com/photo-1542601906990-b4d3fb778b09',
+    },
+    {
+      title: 'Research Facility Tour',
+      image: 'https://images.unsplash.com/photo-1560343090-f0409e92791a',
+    }
   ];
 
   return (
-    <section className="w-full bg-[var(--soft-cream)] py-16 px-4 sm:px-6 md:px-12 lg:px-16 xl:px-20">
-      <div className="text-center mb-12">
-        <h2 className="text-3xl md:text-4xl font-extrabold text-[var(--primary-green)]">News & Events</h2>
-        <p className="mt-4 text-gray-600 md:text-lg">Stay updated with our latest activities, product launches, and industry presence.</p>
-      </div>
+    <section className="w-full bg-emerald-50 py-8 px-4 sm:px-6">
+      <div className="max-w-7xl mx-auto">
+        {/* Section Heading */}
+        <div className="text-center mb-10">
+          <h2 className="text-3xl sm:text-4xl font-bold text-green-800">
+            News & Events Gallery
+          </h2>
+          <p className="mt-3 text-gray-600 max-w-2xl mx-auto text-lg">
+            Highlights from our recent activities and industry engagements
+          </p>
+        </div>
 
-      <Swiper
-        modules={[Autoplay, Pagination]}
-        slidesPerView={1}
-        spaceBetween={20}
-        loop={true}
-        pagination={{ clickable: true }}
-        autoplay={{ delay: 3000, disableOnInteraction: false }}
-        breakpoints={{
-          640: { slidesPerView: 1 },
-          768: { slidesPerView: 2 },
-          1024: { slidesPerView: 3 },
-        }}
-      >
-        {newsItems.map((item, index) => (
-          <SwiperSlide key={index}>
-            <div className="bg-white rounded-xl shadow-md overflow-hidden">
-              <img src={item.image} alt={item.title} className="w-full h-48 object-cover" />
-              <div className="p-4">
-                <h3 className="text-lg font-bold text-[var(--primary-green)]">{item.title}</h3>
-              </div>
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
+        {/* Swiper Gallery with 4 slides on large screens */}
+        <div 
+          className="relative"
+          style={{
+            minHeight: '150px',
+            paddingBottom: '40px' // Space for pagination
+          }}
+        >
+          <Swiper
+            modules={[Autoplay, Pagination]}
+            slidesPerView={1}
+            spaceBetween={20}
+            loop={true}
+            autoplay={{
+              delay: 3500,
+              disableOnInteraction: false,
+            }}
+            pagination={{
+              clickable: true,
+              el: '.custom-pagination',
+              type: 'bullets',
+            }}
+            breakpoints={{
+              640: { // Tablets
+                slidesPerView: 2,
+                spaceBetween: 20
+              },
+              1024: { // Laptops
+                slidesPerView: 3,
+                spaceBetween: 25
+              },
+              1280: { // Large desktops
+                slidesPerView: 4,
+                spaceBetween: 30
+              }
+            }}
+            style={{
+              height: '100%',
+              paddingBottom: '30px'
+            }}
+          >
+            {events.map((event, index) => (
+              <SwiperSlide key={index}>
+                <div className="h-full rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+                  {/* 4:3 Aspect Ratio Container */}
+                  <div 
+                    className="relative"
+                    style={{
+                      paddingTop: '75%' // 4:3 aspect ratio
+                    }}
+                  >
+                    <img 
+                      src={event.image} 
+                      alt={event.title}
+                      className="absolute top-0 left-0 w-full h-full object-cover"
+                    />
+                    {/* Title Overlay */}
+                    <div 
+                      className="absolute bottom-0 left-0 right-0 p-4"
+                      style={{
+                        background: 'linear-gradient(to top, rgba(0,0,0,0.8), transparent)'
+                      }}
+                    >
+                      <h3 className="text-white font-semibold text-base sm:text-lg">
+                        {event.title}
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+          
+          {/* Custom Pagination Container */}
+          {/* <div 
+            className="custom-pagination absolute bottom-0 left-0 right-0 flex justify-center"
+            style={{
+              height: '10px',
+              paddingTop: '10px'
+            }}
+          /> */}
+        </div>
+      </div>
     </section>
   );
 }
