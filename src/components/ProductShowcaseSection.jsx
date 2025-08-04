@@ -37,7 +37,7 @@ export default function ProductShowcaseSection() {
   return (
     <section className="w-full bg-green-100 bg-[var(--soft-cream)] py-8 px-4 sm:px-6 md:px-12 lg:px-16 xl:px-20">
       <div className="text-center mb-12">
-        <h2 className="text-3xl md:text-4xl font-extrabold text-[var(--primary-green)]">Organic Superfoods</h2>
+        <h2 className="text-3xl md:text-4xl font-extrabold text-[var(--primary-green)]">Our Organic Superfoods</h2>
         <p className="mt-4 text-gray-600 md:text-lg">Our minimally processed spirulina helps preserve the nutrients and pigments, which might otherwise be stripped during harsh processing.</p>
       </div>
 

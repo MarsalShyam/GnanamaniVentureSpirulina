@@ -1,39 +1,41 @@
 import { useState } from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Navbar from './components/Navbar'
-import HeroSection from './components/HeroSection'
-import AboutSection from './components/About'
-import QualitySection from './components/QualitySection'
-import CertificationsSection from './components/CertificationsSection'
-import ProductShowcaseSection from './components/ProductShowcaseSection'
-import DifferenceSection from './components/DifferenceSection'
-import NewsSection from './components/NewsSection'
+
 import FooterSection from './components/FooterSection'
-import HeroSection2 from './components/HeroSection2'
+import HomePage from './pages/HomePage'
+import About from './pages/About'
+import Products from './pages/Products'
+import ContactUs from './pages/ContactUs'
+// import HeroSection2 from './components/HeroSection2'
 
 function App() {
   
 
   return (
-    <>
-     
-      <Navbar />
-      <HeroSection/>
-       <AboutSection/>
-      <QualitySection/>
-      <CertificationsSection/>
-      <ProductShowcaseSection/>
-      <DifferenceSection/>
-      <NewsSection/>
+    <Router>
+      <Navbar/>
+      <Routes>
+        <Route path="/" element={<HomePage/>}/>
+        <Route path="/about" element={<About/>}/>
+        <Route path="/Products" element={<Products/>}/>
+        <Route path="/contact" element={<ContactUs/>}/>
+
+      </Routes>
       <FooterSection/>
-      {/* <div className="text-center text-2xl text-[var(--primary-green)] py-12">
-        (Next Sections Will Be Built Here...)
-      </div> */}
-    
-        <div className='w-full bg-amber-700'>ram is a good booy</div>
-    </>
+    </Router>
+    // <>
+     
+    //   <Navbar />
+      
+    //   <FooterSection/>
+    //   {/* <div className="text-center text-2xl text-[var(--primary-green)] py-12">
+    //     (Next Sections Will Be Built Here...)
+    //   </div> */}
+    // </>
   )
 }
 
