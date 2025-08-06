@@ -22,7 +22,7 @@ export default function HeroSection() {
 
       {/* Floating Buttons */}
       <div className="fixed top-1/3 right-0 bg-yellow-400 text-black px-4 py-3 rounded-l-lg shadow-lg cursor-pointer z-50 hover:bg-yellow-500 transition-transform duration-300 transform -translate-y-1/2">
-        Enquiry Form
+        Enquiry Formrf
       </div>
 
       <div className="fixed bottom-6 right-6 bg-green-500 text-white px-4 py-3 rounded-full shadow-lg cursor-pointer z-50 hover:bg-green-600 transition-transform duration-300">

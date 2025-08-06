@@ -10,6 +10,9 @@ import HomePage from './pages/HomePage'
 import About from './pages/About'
 import Products from './pages/Products'
 import ContactUs from './pages/ContactUs'
+import BlogPage from './pages/Blog'
+import BlogDetail from './pages/BlogDetail'
+import Quality from './pages/Quality'
 // import HeroSection2 from './components/HeroSection2'
 
 function App() {
@@ -23,6 +26,9 @@ function App() {
         <Route path="/about" element={<About/>}/>
         <Route path="/Products" element={<Products/>}/>
         <Route path="/contact" element={<ContactUs/>}/>
+        <Route path="/blog" element={<BlogPage/>}/>
+        <Route path="/blog/:slug" element={<BlogDetail/>}/>
+        <Route path="/quality" element={<Quality/>}/>
 
       </Routes>
       <FooterSection/>
