@@ -355,7 +355,7 @@ export default function ProductShowcaseSection() {
                 <div className={`h-full rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all border ${colorClass.border} ${colorClass.bg}`}>
                   {/* Image Container */}
                   <div className="relative h-64 overflow-hidden">
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent z-10"></div>
+                    {/* <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent z-10"></div> */}
                     <img 
                       src={product.image} 
                       alt={product.title} 

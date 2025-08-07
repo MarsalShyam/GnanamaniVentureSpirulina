@@ -464,7 +464,7 @@ export default function QualitySection() {
         </div>
 
         {/* Quality Principles */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {qualityPrinciples.map((principle, index) => (
             <motion.div
               key={index}
@@ -482,7 +482,7 @@ export default function QualitySection() {
               <p className="text-gray-600">{principle.description}</p>
             </motion.div>
           ))}
-        </div>
+        </div> */}
       </div>
     </section>
   );
