@@ -253,6 +253,7 @@ import blueSpirulina from '../assets/Images/product/blueSpirulina.avif';
 import chlorella from '../assets/Images/product/chlorella4.jpg';
 import phycocyanin from '../assets/Images/product/phycocyanin.jpg';
 import animalfeed from '../assets/Images/product/animalfeed.jpg';
+import { Link } from 'react-router-dom';
 
 const products = [
   {
@@ -261,6 +262,7 @@ const products = [
     icon: <FaLeaf className="text-3xl text-green-500" />,
     features: ['60-70% complete protein', 'Rich in antioxidants', 'Vitamin B complex', 'Easy to mix'],
     color: 'green',
+    link:'/products/spirulina',
     image: spirulina
   },
   {
@@ -269,6 +271,7 @@ const products = [
     icon: <FaFlask className="text-3xl text-blue-500" />,
     features: ['Natural blue food coloring', 'High antioxidant content', 'Anti-inflammatory properties', 'Neutral taste'],
     color: 'blue',
+    link:'/products/blue-spirulina',
     image: blueSpirulina
   },
   {
@@ -277,6 +280,7 @@ const products = [
     icon: <FaSeedling className="text-3xl text-emerald-500" />,
     features: ['Natural detoxification', 'Immune system support', 'Rich in chlorophyll', 'Digestive health'],
     color: 'emerald',
+    link:'/products/chlorella',
     image: chlorella
   },
   {
@@ -285,6 +289,7 @@ const products = [
     icon: <FaHeart className="text-3xl text-cyan-500" />,
     features: ['Potent antioxidant', 'Supports liver health', 'Neuroprotective properties', 'Anti-inflammatory effects'],
     color: 'cyan',
+    link:'/products/phycocyanin',
     image: phycocyanin
   },
   {
@@ -293,6 +298,7 @@ const products = [
     icon: <FaPaw className="text-3xl text-amber-500" />,
     features: ['Improved growth rates', 'Enhanced immune response', 'Better feed conversion', 'Natural pigmentation'],
     color: 'amber',
+    link:'/products/animal-feed',
     image: animalfeed
   },
 ];
@@ -384,9 +390,11 @@ export default function ProductShowcaseSection() {
                       whileHover={{ scale: 1.03 }}
                       whileTap={{ scale: 0.97 }}
                     >
+                      <Link to={product.link}>
                       <button className={`w-full bg-gradient-to-r ${colorClass.button} text-white font-semibold py-3 rounded-lg shadow hover:shadow-md transition`}>
                         View Product Details
                       </button>
+                      </Link>
                     </motion.div>
                   </div>
                 </div>
