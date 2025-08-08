@@ -65,6 +65,7 @@
 
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter, FaYoutube, FaMapMarkerAlt, FaPhone, FaEnvelope, FaLeaf } from 'react-icons/fa';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 export default function FooterSection() {
   return (
@@ -81,7 +82,7 @@ export default function FooterSection() {
               <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center mr-3">
                 <FaLeaf className="text-green-400" />
               </div>
-              <h2 className="text-2xl font-bold">SpiruLife</h2>
+              <h2 className="text-2xl font-bold">GnanVenture</h2>
             </div>
             <p className="text-green-100 mb-6 max-w-md">
               Leading manufacturer of premium organic Spirulina products, ensuring purity and nutrient-rich formulations through sustainable practices.
@@ -91,35 +92,35 @@ export default function FooterSection() {
               <motion.a 
                 href="#" 
                 whileHover={{ y: -5 }}
-                className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-green-500 transition"
+                className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-blue-500 transition"
               >
                 <FaFacebookF className="text-white" />
               </motion.a>
               <motion.a 
                 href="#" 
                 whileHover={{ y: -5 }}
-                className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-green-500 transition"
+                className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#fb3d2c] transition"
               >
                 <FaInstagram className="text-white" />
               </motion.a>
               <motion.a 
                 href="#" 
                 whileHover={{ y: -5 }}
-                className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-green-500 transition"
+                className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-blue-700 transition"
               >
                 <FaLinkedinIn className="text-white" />
               </motion.a>
               <motion.a 
                 href="#" 
                 whileHover={{ y: -5 }}
-                className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-green-500 transition"
+                className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-black transition"
               >
                 <FaTwitter className="text-white" />
               </motion.a>
               <motion.a 
                 href="#" 
                 whileHover={{ y: -5 }}
-                className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-green-500 transition"
+                className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-red-500 transition"
               >
                 <FaYoutube className="text-white" />
               </motion.a>
@@ -146,23 +147,35 @@ export default function FooterSection() {
           </div>
 
           {/* Quick Links */}
-          <div>
-            <h3 className="text-lg font-bold mb-5 pb-2 border-b border-green-700 inline-block">Quick Links</h3>
-            <ul className="space-y-3">
-              {['Home', 'About Us', 'Quality Assurance', 'Products', 'Contact', 'Blog', 'Corporate Info'].map((link, index) => (
-                <motion.li 
-                  key={index}
-                  whileHover={{ x: 5 }}
-                  className="text-green-100 hover:text-white transition"
-                >
-                  <a href="#" className="flex items-center">
-                    <div className="w-1.5 h-1.5 rounded-full bg-green-400 mr-3"></div>
-                    {link}
-                  </a>
-                </motion.li>
-              ))}
-            </ul>
-          </div>
+          {/* Quick Links */}
+<div>
+  <h3 className="text-lg font-bold mb-5 pb-2 border-b border-green-700 inline-block">Quick Links</h3>
+  <ul className="space-y-3">
+    {[
+      { name: 'Home', path: '/' },
+      { name: 'About Us', path: '/about' },
+      { name: 'Quality Assurance', path: '/quality' },
+      { name: 'Products', path: '/products' },
+      { name: 'Contact', path: '/contact' },
+      { name: 'Blog', path: '/blog' },
+      { name: 'Corporate Info', path: '/about' } // or a dedicated page later
+    ].map((link, index) => (
+      <motion.li 
+        key={index}
+        whileHover={{ x: 5 }}
+        className="text-green-100 hover:text-white transition"
+      >
+        <Link 
+          to={link.path} 
+          className="flex items-center"
+        >
+          <div className="w-1.5 h-1.5 rounded-full bg-green-400 mr-3"></div>
+          {link.name}
+        </Link>
+      </motion.li>
+    ))}
+  </ul>
+</div>
 
           {/* Contact Info */}
           <div>
@@ -172,19 +185,19 @@ export default function FooterSection() {
                 <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center flex-shrink-0 mr-3">
                   <FaMapMarkerAlt className="text-green-400" />
                 </div>
-                <span className="text-green-100">123, Green Valley Industrial Park<br />Chennai, India - 600001</span>
+                <span className="text-green-100">Gnyanamani Venture Pvt. Ltd.,<br />No.62A/1, Kattanachampatti,<br/>Block No 2, Rasipuram, Namakkal,<br/>Tamilnadu, India - 637408.</span>
               </li>
               <li className="flex items-center">
                 <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center flex-shrink-0 mr-3">
                   <FaPhone className="text-green-400" />
                 </div>
-                <span className="text-green-100">+91 98765 43210</span>
+                <span className="text-green-100">+91 95088 68365</span>
               </li>
               <li className="flex items-center">
                 <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center flex-shrink-0 mr-3">
                   <FaEnvelope className="text-green-400" />
                 </div>
-                <span className="text-green-100">info@spirulife.com</span>
+                <span className="text-green-100">info@gnyanventure.com</span>
               </li>
             </ul>
           </div>
@@ -199,11 +212,11 @@ export default function FooterSection() {
             </div>
             
             <div className="flex-1 w-full max-w-md">
-              <form className="flex gap-2">
+              <form className="flex flex-col md:flex-row gap-2 ">
                 <input 
                   type="email" 
                   placeholder="Your email address" 
-                  className="flex-1 px-4 py-3 rounded-lg bg-white/10 backdrop-blur-sm text-white placeholder-green-200 focus:outline-none focus:ring-2 focus:ring-green-400"
+                  className="flex-1  px-4 py-3 rounded-lg bg-white/10 backdrop-blur-sm text-white placeholder-green-200 focus:outline-none focus:ring-2 focus:ring-green-400"
                 />
                 <motion.button
                   whileHover={{ scale: 1.05 }}
@@ -221,7 +234,7 @@ export default function FooterSection() {
         {/* Bottom Bar */}
         <div className="border-t border-green-700 pt-6 flex flex-col md:flex-row justify-between items-center">
           <div className="text-green-300 text-sm mb-4 md:mb-0">
-            &copy; {new Date().getFullYear()} Gnanamani Venture. All Rights Reserved.
+            &copy; {new Date().getFullYear()} Gnyanamani Venture. All Rights Reserved.
           </div>
           
           <div className="flex flex-wrap gap-4 justify-center">

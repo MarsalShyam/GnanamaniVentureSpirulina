@@ -313,7 +313,7 @@ export default function ProductShowcaseSection() {
   };
 
   return (
-    <section className="w-full py-20 px-4 sm:px-6 md:px-12 lg:px-16 xl:px-20 bg-gradient-to-b from-white to-green-50 relative overflow-hidden">
+    <section id="products" className="w-full py-20 px-4 sm:px-6 md:px-12 lg:px-16 xl:px-20 bg-gradient-to-b from-white to-green-50 relative overflow-hidden">
       {/* Decorative elements */}
       <div className="absolute top-20 left-0 w-60 h-60 rounded-full bg-green-100/30 blur-3xl -z-10"></div>
       <div className="absolute bottom-10 right-0 w-80 h-80 rounded-full bg-emerald-100/20 blur-3xl -z-10"></div>
@@ -359,7 +359,7 @@ export default function ProductShowcaseSection() {
                     <img 
                       src={product.image} 
                       alt={product.title} 
-                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                      className="w-full h-full object-contain transition-transform duration-700 group-hover:scale-105"
                     />
                     <div className="absolute top-4 right-4 z-20">
                       {product.icon}
@@ -418,7 +418,7 @@ export default function ProductShowcaseSection() {
             whileTap={{ scale: 0.95 }}
             className="bg-gradient-to-r from-green-600 to-emerald-700 text-white font-semibold px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition"
           >
-            Request Product Catalog
+           <Link to="/contact">Request Product Catalog</Link>
           </motion.button>
         </motion.div>
       </div>

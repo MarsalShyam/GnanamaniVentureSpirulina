@@ -33,7 +33,7 @@ export default function HeroSlider() {
   ];
 
   return (
-    <section className="w-full relative overflow-hidden pt-16 md:pt-17 lg:pt-19  ">
+    <section id="hero" className="w-full relative overflow-hidden pt-16 md:pt-17 lg:pt-19  ">
       <Swiper
         modules={[Navigation, Autoplay]}
         navigation

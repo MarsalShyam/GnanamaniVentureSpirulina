@@ -25,7 +25,7 @@ export default function DifferenceSection() {
   ];
 
   return (
-    <section className="w-full bg-yellow-50 bg-[var(--soft-blue-bg)] py-6 px-4 sm:px-6 md:px-12 lg:px-16 xl:px-20">
+    <section id="difference" className="w-full bg-yellow-50 bg-[var(--soft-blue-bg)] py-6 px-4 sm:px-6 md:px-12 lg:px-16 xl:px-20">
       {/* Heading */}
       {/* <div className="text-center mb-12">
         <h2 className="text-3xl md:text-4xl font-extrabold text-[var(--primary-green)]">

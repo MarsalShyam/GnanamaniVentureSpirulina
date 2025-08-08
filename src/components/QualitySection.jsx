@@ -349,7 +349,7 @@ export default function QualitySection() {
   ];
 
   return (
-    <section className="w-full py-16 px-4 sm:px-6 md:px-12 lg:px-16 xl:px-20 bg-gradient-to-b from-white to-green-50 relative overflow-hidden">
+    <section id="quality" className="w-full py-8 px-4 sm:px-6 md:px-12 lg:px-16 xl:px-20 bg-gradient-to-b from-white to-green-50 relative overflow-hidden">
       {/* Decorative elements */}
       <div className="absolute top-10 left-10 w-40 h-40 rounded-full bg-green-100/30 blur-3xl -z-10"></div>
       <div className="absolute bottom-10 right-10 w-40 h-40 rounded-full bg-emerald-100/20 blur-3xl -z-10"></div>

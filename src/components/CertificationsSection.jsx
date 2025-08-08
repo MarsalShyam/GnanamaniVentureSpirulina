@@ -35,7 +35,7 @@ export default function CertificationsSection() {
   ]
 
   return (
-    <section className="w-full bg-green-50 py-10 px-4 sm:px-6 md:px-12 lg:px-16 xl:px-20">
+    <section id="certification" className="w-full bg-green-50 py-10 px-4 sm:px-6 md:px-12 lg:px-16 xl:px-20">
       {/* <div className="text-center mb-12">
         <h2 className="text-3xl md:text-4xl font-extrabold text-[var(--primary-green)]">Our Global Certifications</h2>
         <p className="mt-4 text-gray-600 md:text-lg">We proudly hold internationally recognized certifications ensuring top-tier product quality.</p>

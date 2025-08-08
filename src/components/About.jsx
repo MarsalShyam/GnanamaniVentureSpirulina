@@ -54,7 +54,7 @@ export default function AboutSection() {
   ];
 
   return (
-    <section className="w-full py-20 px-4 sm:px-6 md:px-12 lg:px-16 xl:px-20 bg-gradient-to-b from-green-50 to-white relative overflow-hidden">
+    <section id="about" className="w-full py-10 px-4 sm:px-6 md:px-12 lg:px-16 xl:px-20 bg-gradient-to-b from-green-50 to-white relative overflow-hidden">
       {/* Decorative elements */}
       <div className="absolute top-10 left-10 w-40 h-40 rounded-full bg-green-100/40 blur-3xl -z-10"></div>
       <div className="absolute bottom-20 right-20 w-60 h-60 rounded-full bg-emerald-100/30 blur-3xl -z-10"></div>

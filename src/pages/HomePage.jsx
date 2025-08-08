@@ -9,15 +9,15 @@ import NewsSection from '../components/NewsSection'
 
 const HomePage = () => {
   return (
-    <>
-    <HeroSection/>
-    <AboutSection/>
-    <ProductShowcaseSection/>
-    <QualitySection/>
-    <CertificationsSection/>
-    <DifferenceSection/>
-    <NewsSection/>
-    </>
+    <div>
+    <HeroSection id="home"/>
+    <AboutSection id="about"/>
+    <ProductShowcaseSection id="products"/>
+    <QualitySection id="quality"/>
+    <CertificationsSection id="certifications"/>
+    <DifferenceSection id="difference"/>
+    <NewsSection id="news"/>
+    </div>
   )
 }
 

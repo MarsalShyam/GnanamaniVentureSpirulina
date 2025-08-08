@@ -650,7 +650,7 @@ export default function Navbar() {
 
       {/* Main Navbar - Fixed on Scroll */}
       <motion.nav
-        className={`fixed top-0 left-0 right-0 z-40 transition-all duration-500 ${scrolled ? 'bg-white/95 shadow-lg py-3 backdrop-blur-md' : 'bg-[#7bf1a876] py-4'
+        className={`fixed top-0 left-0 right-0 z-40 transition-all duration-500 ${scrolled ? 'bg-[#7bf1a876] shadow-lg py-3' : 'bg-[#7bf1a876] py-4'
           }`}
         style={{ marginTop: topBarVisible ? 0 : -60 }}
       >
