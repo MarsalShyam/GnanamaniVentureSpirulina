@@ -33,7 +33,7 @@ export default function HeroSlider() {
   ];
 
   return (
-    <section className="w-full relative overflow-hidden pt-17  ">
+    <section className="w-full relative overflow-hidden pt-16 md:pt-17 lg:pt-19  ">
       <Swiper
         modules={[Navigation, Autoplay]}
         navigation
@@ -82,14 +82,30 @@ export default function HeroSlider() {
       </Swiper>
 
       {/* Enquiry Form Floating Button */}
-      <div className="fixed top-1/3 right-0 bg-yellow-400 text-black px-4 py-2 rounded-l-lg shadow-md cursor-pointer z-50 hover:bg-yellow-500 transition">
-        Enquiry Form
+      <div className="fixed top-1/4 right-4 bg-yellow-400 text-black px-4 py-2 rounded-l-lg shadow-md cursor-pointer z-50 hover:bg-yellow-500 transition">
+        <a href='#enquiry-form'><span className="mr-2">📝</span>Enquiry Form</a>
       </div>
 
       {/* WhatsApp Floating Button */}
-      <div className="fixed bottom-6 right-6 bg-green-500 text-white px-4 py-2 rounded-full shadow-lg cursor-pointer z-50 hover:bg-green-600 transition">
-        <a href="https://wa.me/919508868365" target="_blank" rel="noopener noreferrer">WhatsApp Us</a>
+      <div className="fixed bottom-6 left-5 bg-green-500 text-white px-4 py-2 rounded-full shadow-lg cursor-pointer z-50 hover:bg-green-600 transition">
+        <a href="https://wa.me/919508868365" target="_blank" rel="noopener noreferrer"><span className="mr-2">💬</span>WhatsApp Us</a>
       </div>
+      {/* <div className="fixed right-4 bottom-6 md:bottom-8 z-50 flex flex-col space-y-3">
+        <a
+          href="#enquiry-form"
+          className="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold py-3 px-5 rounded-full shadow-lg flex items-center justify-center transition-all duration-300 hover:scale-105"
+        >
+          <span className="mr-2">📝</span> Enquiry Form
+        </a>
+        <a
+          href="https://wa.me/919999999999"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-5 rounded-full shadow-lg flex items-center justify-center transition-all duration-300 hover:scale-105"
+        >
+          <span className="mr-2">💬</span> WhatsApp Us
+        </a>
+      </div> */}
     </section>
   );
 }
