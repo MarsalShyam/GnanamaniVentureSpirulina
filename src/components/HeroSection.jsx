@@ -82,7 +82,7 @@ export default function HeroSlider() {
       </Swiper>
 
       {/* Enquiry Form Floating Button */}
-      <div className="fixed top-1/4 right-4 bg-yellow-400 text-black px-4 py-2 rounded-l-lg shadow-md cursor-pointer z-50 hover:bg-yellow-500 transition">
+      <div className="fixed top-1/4 right-0 bg-yellow-400 text-black px-4 py-2 rounded-l-lg shadow-md cursor-pointer z-50 hover:bg-yellow-500 transition">
         <a href='#enquiry-form'><span className="mr-2">📝</span>Enquiry Form</a>
       </div>
 

@@ -63,11 +63,14 @@
 // }
 
 
+
+import { useState } from 'react';
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter, FaYoutube, FaMapMarkerAlt, FaPhone, FaEnvelope, FaLeaf } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
 export default function FooterSection() {
+  const [isSubmitted,setIsSubmitted]=useState(false);
   return (
     <footer className="w-full bg-gradient-to-b from-[var(--primary-green)] to-emerald-900 text-white pt-16 pb-8 px-4 sm:px-6 md:px-12 lg:px-16 xl:px-20 relative overflow-hidden">
       {/* Decorative elements */}
@@ -204,7 +207,7 @@ export default function FooterSection() {
         </div>
 
         {/* Newsletter */}
-        <div className="bg-gradient-to-r from-green-700 to-emerald-800 rounded-xl p-6 mb-12">
+        {/* <div className="bg-gradient-to-r from-green-700 to-emerald-800 rounded-xl p-6 mb-12">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             <div className="flex-1">
               <h3 className="text-xl font-bold mb-2">Subscribe to Our Newsletter</h3>
@@ -229,8 +232,51 @@ export default function FooterSection() {
               <p className="text-green-200 text-xs mt-2">We respect your privacy. Unsubscribe at any time.</p>
             </div>
           </div>
-        </div>
+        </div> */}
+        {/* Newsletter */}
+<div className="bg-gradient-to-r from-green-700 to-emerald-800 rounded-xl p-6 mb-12">
+  <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+    <div className="flex-1">
+      <h3 className="text-xl font-bold mb-2">Subscribe to Our Newsletter</h3>
+      <p className="text-green-100">Get updates on new products, industry insights, and special offers.</p>
+    </div>
 
+    <div className="flex-1 w-full max-w-md">
+      {isSubmitted ? (
+        // ✅ Success Message (shown after submit)
+        <div className="bg-white/20 backdrop-blur-sm p-4 rounded-lg text-green-100 text-center animate-fade-in-up">
+          <p className="font-medium">✅ Thank you for subscribing!</p>
+          <p className="text-sm mt-1 opacity-90">We'll keep you updated with the latest from GnyanVenture.</p>
+        </div>
+      ) : (
+        //  Subscription Form
+        <form
+          action="https://formspree.io/f/xgvzpbwr"
+          method="POST"
+          onSubmit={() => setIsSubmitted(true)}
+          className="flex flex-col md:flex-row gap-2"
+        >
+          <input
+            type="email"
+            name="email"
+            placeholder="Your email address"
+            className="flex-1 px-4 py-3 rounded-lg bg-white/10 backdrop-blur-sm text-white placeholder-green-200 focus:outline-none focus:ring-2 focus:ring-green-400"
+            required
+          />
+          <button
+            type="submit"
+            className="bg-gradient-to-r from-amber-400 to-yellow-500 text-gray-900 font-semibold px-5 py-3 rounded-lg hover:shadow-lg transition"
+          >
+            Subscribe
+          </button>
+        </form>
+      )}
+      <p className="text-green-200 text-xs mt-2">
+        We respect your privacy. No spam, ever.
+      </p>
+    </div>
+  </div>
+</div>
         {/* Bottom Bar */}
         <div className="border-t border-green-700 pt-6 flex flex-col md:flex-row justify-between items-center">
           <div className="text-green-300 text-sm mb-4 md:mb-0">
