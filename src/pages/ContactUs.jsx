@@ -74,20 +74,20 @@ export default function ContactUs() {
             <div className="space-y-6">
               <div className="flex items-center space-x-4">
                 <FaPhone className="text-[var(--primary-green)] text-xl flex-shrink-0" />
-                <span className="text-lg text-gray-700">+91 9876543210</span>
+                <span className="text-lg text-gray-700">+91 9508868365</span>
               </div>
               <div className="flex items-center space-x-4">
                 <FaEnvelope className="text-[var(--primary-green)] text-xl flex-shrink-0" />
-                <span className="text-lg text-gray-700">info@spirulife.com</span>
+                <span className="text-lg text-gray-700">info@gnyanventure.com</span>
               </div>
               <div className="flex items-center space-x-4">
                 <FaMapMarkerAlt className="text-[var(--primary-green)] text-xl flex-shrink-0" />
-                <span className="text-lg text-gray-700">123 Green Valley, Chennai, India</span>
+                <span className="text-gray-700 text-lg">Gnyanamani Venture Pvt. Ltd.,<br />No.62A/1, Kattanachampatti,<br/>Block No 2, Rasipuram, Namakkal,<br/>Tamilnadu, India - 637408.</span>
               </div>
             </div>
             
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.921080721347!2d77.5946!3d12.9716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDU4JzE3LjkiTiA3N8KwMzUnMzkuNiJF!5e0!3m2!1sen!2sin!4v1612165935000!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3910.1061227873365!2d78.18614767489306!3d11.472265388721985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babe9e4af0e2223%3A0xa3ed651672f52b98!2s1st%20St%2C%20Rasipuram%2C%20Tamil%20Nadu%20637408!5e0!3m2!1sen!2sin!4v1754699159770!5m2!1sen!2sin"
               width="100%"
               height="300"
               style={{ border: 0 }}
@@ -95,6 +95,7 @@ export default function ContactUs() {
               loading="lazy"
               className="rounded-xl shadow-lg mt-4"
             ></iframe>
+            
           </div>
 
           {/* Contact Form */}

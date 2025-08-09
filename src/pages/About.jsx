@@ -1,9 +1,11 @@
 import { useState } from 'react';
 import { FaBullseye, FaLightbulb, FaMicroscope, FaLeaf, FaGlobe, FaAward, FaUserFriends, FaChartLine } from 'react-icons/fa';
+import hero1 from '../assets/Images/About/abouthero.webp'
+import vision from '../assets/Images/About/vision.jpg'
 
 export default function About() {
   const [activeTab, setActiveTab] = useState('mission');
-  
+
   // Team members data
   const teamMembers = [
     { id: 1, name: 'Rajesh Kumar', role: 'Founder & CEO', bio: '20+ years in biotechnology with a passion for sustainable nutrition solutions.' },
@@ -14,14 +16,17 @@ export default function About() {
 
   return (
     <main className="w-full bg-gradient-to-b from-[#f0f8f0] to-[#e0f0e0] text-gray-800 overflow-hidden">
-      
+
       {/* Hero Section with Parallax Effect */}
       <section className="relative w-full py-24 md:py-32 px-4 sm:px-6 md:px-12 lg:px-16 xl:px-20 overflow-hidden">
         <div className="absolute inset-0 bg-green-900/10 z-0">
-          <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1560264280-88b68371db39?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center opacity-20"></div>
+          <div 
+    className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20" 
+    style={{ backgroundImage: `url(${vision})` }}
+  ></div>
           <div className="absolute inset-0 bg-gradient-to-b from-green-900/5 to-green-900/20"></div>
         </div>
-        
+
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="flex flex-col md:flex-row items-center justify-between gap-8">
             <div className="flex-1 text-center md:text-left">
@@ -30,10 +35,10 @@ export default function About() {
                 Leading Organic Spirulina Manufacturer
               </h1>
               <p className="mt-4 text-gray-700 md:text-lg max-w-3xl mx-auto md:mx-0">
-                At Spirulife, we specialize in cultivating, processing, and delivering premium Spirulina in powder, tablet, and capsule forms. 
+                At Spirulife, we specialize in cultivating, processing, and delivering premium Spirulina in powder, tablet, and capsule forms.
                 With our advanced microalgae technology and sustainable practices, we ensure top-notch quality that meets global standards.
               </p>
-              
+
               <div className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-2xl">
                 <div className="bg-white/80 backdrop-blur-sm p-4 rounded-lg shadow-sm border border-green-100 flex flex-col items-center">
                   <FaLeaf className="text-green-600 text-2xl mb-2" />
@@ -57,11 +62,14 @@ export default function About() {
                 </div>
               </div>
             </div>
-            
+
             <div className="flex-1 flex justify-center">
               <div className="relative w-full max-w-md">
                 <div className="bg-green-800/10 border-2 border-green-300/30 rounded-xl w-full aspect-square max-w-md overflow-hidden transform rotate-3">
-                  <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1593118247619-e2d6f056869e?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center scale-110"></div>
+                  <div 
+  className="absolute inset-0 bg-cover bg-center scale-110" 
+  style={{ backgroundImage: `url(${hero1})` }}
+></div>
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-green-900/40 to-green-900/0 rounded-xl"></div>
               </div>
@@ -77,9 +85,10 @@ export default function About() {
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Core Values</h2>
             <div className="w-24 h-1 bg-green-500 mx-auto rounded-full"></div>
           </div>
-          
+
           <div className="flex flex-col md:flex-row items-center justify-between gap-8">
-            <div className="flex-1 bg-gradient-to-br from-green-50 to-white p-8 rounded-2xl shadow-lg border border-green-100 hover:shadow-xl transition-all duration-300">
+
+            {/* <div className="flex-1 bg-gradient-to-br from-green-50 to-white p-8 rounded-2xl shadow-lg border border-green-100 hover:shadow-xl transition-all duration-300">
               <div className="inline-flex items-center justify-center bg-green-600 text-white p-3 rounded-full mb-6">
                 <FaBullseye className="text-xl" />
               </div>
@@ -101,9 +110,44 @@ export default function About() {
                   <span>Set industry standards for purity and quality</span>
                 </li>
               </ul>
+            </div> */}
+
+            <div
+              className="flex-1 p-8 rounded-2xl shadow-lg border border-green-100 hover:shadow-xl transition-all duration-300 relative overflow-hidden"
+              style={{
+                backgroundImage: `url(${vision})`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+              }}
+            >
+              {/* Overlay for readability */}
+              <div className="absolute inset-0 bg-gradient-to-br from-white/30 to-green-50/80 "></div>
+              <div className="relative z-10"> {/* Content */}
+                <div className="inline-flex items-center justify-center bg-green-600 text-white p-3 rounded-full mb-6">
+                  <FaBullseye className="text-xl" />
+                </div>
+                <h2 className="text-2xl font-bold mb-4 text-gray-800">Our Mission</h2>
+                <p className="text-gray-600 mb-4">
+                  To promote health and wellness globally by providing the highest quality Spirulina products through sustainable and innovative cultivation practices.
+                </p>
+                <ul className="space-y-2 mt-6">
+                  {/* list items */}
+                  <li className="flex items-start">
+                    <span className="text-green-500 mr-2">✓</span>
+                    <span>Empower communities with accessible superfood nutrition</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-green-500 mr-2">✓</span>
+                    <span>Develop innovative cultivation techniques</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-green-500 mr-2">✓</span>
+                    <span>Set industry standards for purity and quality</span>
+                  </li>
+                </ul>
+              </div>
             </div>
-            
-            <div className="flex-1 bg-gradient-to-br from-green-50 to-white p-8 rounded-2xl shadow-lg border border-green-100 hover:shadow-xl transition-all duration-300">
+            {/* <div className="flex-1 bg-gradient-to-br from-green-50 to-white p-8 rounded-2xl shadow-lg border border-green-100 hover:shadow-xl transition-all duration-300">
               <div className="inline-flex items-center justify-center bg-green-600 text-white p-3 rounded-full mb-6">
                 <FaLightbulb className="text-xl" />
               </div>
@@ -125,6 +169,42 @@ export default function About() {
                   <span>Inspire sustainable industry practices</span>
                 </li>
               </ul>
+            </div> */}
+            {/* our vision */}
+<div
+              className="flex-1 p-8 rounded-2xl shadow-lg border border-green-100 hover:shadow-xl transition-all duration-300 relative overflow-hidden"
+              style={{
+                backgroundImage: `url(${vision})`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+              }}
+            >
+              {/* Overlay for readability */}
+              <div className="absolute inset-0 bg-gradient-to-br from-white/30 to-green-50/80 backdrop-blur-[0px]"></div>
+              <div className="relative z-10"> {/* Content */}
+                <div className="inline-flex items-center justify-center bg-green-600 text-white p-3 rounded-full mb-6">
+                  <FaLightbulb className="text-xl" />
+                </div>
+                <h2 className="text-2xl font-bold mb-4 text-gray-800">Our Vision</h2>
+                <p className="text-gray-600 mb-4">
+                  To be the world's leading microalgae-based nutritional company, fostering a healthier and greener planet through sustainable biotechnology.
+                </p>
+                <ul className="space-y-2 mt-6">
+                  {/* list items */}
+                  <li className="flex items-start">
+                    <span className="text-green-500 mr-2">✓</span>
+                    <span>Pioneer carbon-negative food production</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-green-500 mr-2">✓</span>
+                    <span>Establish global nutritional security</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-green-500 mr-2">✓</span>
+                    <span>Inspire sustainable industry practices</span>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -138,11 +218,11 @@ export default function About() {
             <p className="text-gray-600 max-w-3xl mx-auto">From a small research initiative to a global leader in Spirulina production</p>
             <div className="w-24 h-1 bg-green-500 mx-auto rounded-full mt-4"></div>
           </div>
-          
+
           <div className="relative">
             {/* Timeline */}
             <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-green-200"></div>
-            
+
             <div className="space-y-12">
               {/* Milestone 1 */}
               <div className="flex flex-col md:flex-row items-center">
@@ -158,7 +238,7 @@ export default function About() {
                 </div>
                 <div className="md:w-1/2 md:pl-12 mt-6 md:mt-0"></div>
               </div>
-              
+
               {/* Milestone 2 */}
               <div className="flex flex-col md:flex-row items-center">
                 <div className="md:w-1/2 md:pr-12 mb-6 md:mb-0"></div>
@@ -173,7 +253,7 @@ export default function About() {
                   </div>
                 </div>
               </div>
-              
+
               {/* Milestone 3 */}
               <div className="flex flex-col md:flex-row items-center">
                 <div className="md:w-1/2 md:pr-12 md:text-right mb-6 md:mb-0">
@@ -188,7 +268,7 @@ export default function About() {
                 </div>
                 <div className="md:w-1/2 md:pl-12 mt-6 md:mt-0"></div>
               </div>
-              
+
               {/* Milestone 4 */}
               <div className="flex flex-col md:flex-row items-center">
                 <div className="md:w-1/2 md:pr-12 mb-6 md:mb-0"></div>
@@ -216,17 +296,31 @@ export default function About() {
             <p className="text-gray-600 max-w-3xl mx-auto">Passionate experts driving innovation in Spirulina production</p>
             <div className="w-24 h-1 bg-green-500 mx-auto rounded-full mt-4"></div>
           </div>
-          
+
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {teamMembers.map(member => (
-              <div key={member.id} className="bg-gradient-to-b from-white to-green-50 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-green-100">
-                <div className="bg-gray-200 border-2 border-dashed rounded-xl w-full h-60" />
-                <div className="p-6">
-                  <h3 className="text-xl font-bold text-gray-900">{member.name}</h3>
-                  <p className="text-green-600 font-medium mb-3">{member.role}</p>
-                  <p className="text-gray-600">{member.bio}</p>
-                </div>
-              </div>
+              // <div key={member.id} className="bg-gradient-to-b from-white to-green-50 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-green-100">
+              //   <div className="bg-gray-200 border-2 border-dashed rounded-xl w-full h-60" />
+              //   <div className="p-6">
+              //     <h3 className="text-xl font-bold text-gray-900">{member.name}</h3>
+              //     <p className="text-green-600 font-medium mb-3">{member.role}</p>
+              //     <p className="text-gray-600">{member.bio}</p>
+              //   </div>
+              // </div>
+              <div 
+  key={member.id} 
+  className="bg-gradient-to-b from-white to-green-50 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-green-100"
+>
+  <div 
+    className="w-full h-60 bg-cover bg-center rounded-t-xl"
+    style={{ backgroundImage: `url(${hero1})` }}
+  ></div>
+  <div className="p-6">
+    <h3 className="text-xl font-bold text-gray-900">{member.name}</h3>
+    <p className="text-green-600 font-medium mb-3">{member.role}</p>
+    <p className="text-gray-600">{member.bio}</p>
+  </div>
+</div>
             ))}
           </div>
         </div>
@@ -242,11 +336,11 @@ export default function About() {
               </div>
               <h2 className="text-3xl md:text-4xl font-bold mb-6">Innovation & Research</h2>
               <p className="text-green-100 md:text-lg mb-8 max-w-3xl">
-                Our dedicated R&D team continuously works on enhancing cultivation techniques, nutrient preservation, 
-                and developing innovative products to meet global health standards. We integrate advanced technology 
+                Our dedicated R&D team continuously works on enhancing cultivation techniques, nutrient preservation,
+                and developing innovative products to meet global health standards. We integrate advanced technology
                 with eco-friendly practices to maximize nutritional value while minimizing environmental impact.
               </p>
-              
+
               <div className="grid grid-cols-2 gap-6 max-w-2xl">
                 <div className="bg-white/10 p-4 rounded-xl backdrop-blur-sm">
                   <h3 className="font-bold text-lg mb-2">Advanced Cultivation</h3>
@@ -266,7 +360,7 @@ export default function About() {
                 </div>
               </div>
             </div>
-            
+
             <div className="flex-1 flex justify-center">
               <div className="relative w-full max-w-lg">
                 <div className="aspect-video bg-gradient-to-r from-emerald-700 to-green-800 rounded-2xl overflow-hidden shadow-2xl">
