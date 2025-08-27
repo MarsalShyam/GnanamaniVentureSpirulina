@@ -7,6 +7,7 @@ import image1 from '../assets/Images/1.png'
 import image2 from '../assets/Images/2.png'
 import image3 from '../assets/Images/3.png'
 import image4 from '../assets/Images/4.png'
+import {Link} from 'react-router-dom';
 
 export default function HeroSlider() {
   const slides = [
@@ -82,13 +83,27 @@ export default function HeroSlider() {
       </Swiper>
 
       {/* Enquiry Form Floating Button */}
-      <div className="fixed top-1/4 right-0 bg-yellow-400 text-black px-4 py-2 rounded-l-lg shadow-md cursor-pointer z-50 hover:bg-yellow-500 transition">
-        <a href='#enquiry-form'><span className="mr-2">📝</span>Enquiry Form</a>
+      <div className="fixed top-1/4 right-0 bg-yellow-400 text-black px-4 py-2 rounded-l-lg shadow-md cursor-pointer z-50 hover:bg-yellow-500 transition transform hover:translate-x-0 hover:shadow-lg">
+        <Link
+          to="/contact#enquiry-form"
+          smooth
+          className="flex items-center font-medium"
+        >
+          <span className="mr-2">📝</span> Enquiry Form
+        </Link>
       </div>
 
       {/* WhatsApp Floating Button */}
-      <div className="fixed bottom-6 left-5 bg-green-500 text-white px-4 py-2 rounded-full shadow-lg cursor-pointer z-50 hover:bg-green-600 transition">
-        <a href="https://wa.me/919508868365" target="_blank" rel="noopener noreferrer"><span className="mr-2">💬</span>WhatsApp Us</a>
+      <div className="fixed bottom-6 left-5 bg-green-500 text-white px-4 py-2 rounded-full shadow-lg cursor-pointer z-50 hover:bg-green-600 transition transform hover:scale-105">
+        <a
+          href="https://wa.me/919508868365?text=Welcome%20to%20Gnanamani%20Venture!%20Please%20feel%20free%20to%20reach%20out%20if%20you%20face%20any%20issues.
+"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center font-medium"
+        >
+          <span className="mr-2">💬</span> WhatsApp Us
+        </a>
       </div>
       {/* <div className="fixed right-4 bottom-6 md:bottom-8 z-50 flex flex-col space-y-3">
         <a

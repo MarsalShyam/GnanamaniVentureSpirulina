@@ -54,7 +54,7 @@ export default function ContactUs() {
   };
 
   return (
-    <section className="pt-28 pb-16 px-4 md:px-12 bg-gradient-to-b from-green-50 to-white min-h-screen">
+    <section id="contact" className="pt-28 pb-16 px-4 md:px-12 bg-gradient-to-b from-green-50 to-white min-h-screen">
       <div className="max-w-7xl mx-auto">
         <h1 className="text-4xl md:text-5xl font-bold text-center text-gray-900 mb-16">
           Contact Us

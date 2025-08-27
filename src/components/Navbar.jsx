@@ -650,7 +650,7 @@ export default function Navbar() {
 
       {/* Main Navbar - Fixed on Scroll */}
       <motion.nav
-        className={`fixed top-0 left-0 right-0 z-40 transition-all duration-500 ${scrolled ? 'bg-[#7bf1a876] shadow-lg py-3' : 'bg-[#7bf1a876] py-4'
+        className={`fixed top-0 left-0 right-0 z-40 transition-all duration-500 ${scrolled ? 'bg-[#7bf1a8cd] shadow-lg py-3' : 'bg-[#7bf1a8c4] py-4'
           }`}
         style={{ marginTop: topBarVisible ? 0 : -60 }}
       >
@@ -822,7 +822,7 @@ export default function Navbar() {
         <AnimatePresence>
           {menuOpen && (
             <motion.div
-              className="fixed inset-0 bg-[#7bf1a8ca] text-gray-700 z-40 overflow-y-auto"
+              className="fixed inset-0 bg-[#7bf1a8e5] text-gray-700 z-40 overflow-y-auto"
               initial={{ x: "100%" }}
               animate={{ x: 0 }}
               exit={{ x: "100%" }}
