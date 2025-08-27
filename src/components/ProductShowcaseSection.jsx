@@ -366,6 +366,7 @@ export default function ProductShowcaseSection() {
                     </div>
                   </div>
                   
+                  
                   {/* Content */}
                   <div className="p-6">
                     <h3 className="text-xl font-bold text-gray-900 mb-3">{product.title}</h3>
