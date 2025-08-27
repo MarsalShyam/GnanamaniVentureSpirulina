@@ -359,7 +359,7 @@ export default function ProductShowcaseSection() {
                     <img 
                       src={product.image} 
                       alt={product.title} 
-                      className="w-full h-full object-contain transition-transform duration-700 group-hover:scale-105"
+                      className="w-full h-full object-cover md:object-contain transition-transform duration-700 group-hover:scale-105"
                     />
                     <div className="absolute top-4 right-4 z-20">
                       {product.icon}
