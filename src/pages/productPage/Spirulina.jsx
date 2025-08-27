@@ -1,12 +1,17 @@
 import { motion } from 'framer-motion';
 import { FaLeaf, FaCheck, FaShippingFast, FaCertificate, FaSeedling } from 'react-icons/fa';
 
+import packagingImg1 from '../../assets/Images/products/green/packaging-jar.jpeg';        // Glass jar
+import packagingImg2 from '../../assets/images/products/green/packaging-pouch.jpeg';      // Biodegradable pouch
+import packagingImg3 from '../../assets/images/products/green/packaging-lifestyle.jpeg';  // Product in use
+import packagingImg4 from '../../assets/images/products/green/packaging-shipping.jpeg';   // Shipping box
+
 export default function Spirulina() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-green-50 to-white">
       {/* Hero Section */}
       <section className="relative py-20 md:py-32 px-4 sm:px-6 md:px-12 lg:px-16 xl:px-20 overflow-hidden bg-gradient-to-r from-green-900 to-emerald-900 text-white">
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1597074866923-dc0589150358?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center opacity-40"></div>
+        <div className="absolute inset-0 bg-[url('https://media.istockphoto.com/id/2078247537/photo/spirulina-healrhy-food-organic-antioxidant.jpg?s=612x612&w=0&k=20&c=956xeQn7swrQXd0bdace1txqBLgyHg-OTxrzue9vAn4=')] bg-cover bg-center opacity-40"></div>
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="flex flex-col lg:flex-row items-center gap-12">
             <div className="flex-1">
@@ -54,7 +59,7 @@ export default function Spirulina() {
               </motion.div>
             </div>
             
-            <div className="flex-1 flex justify-center">
+            {/* <div className="flex-1 flex justify-center">
               <motion.div
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
@@ -75,7 +80,7 @@ export default function Spirulina() {
                   </div>
                 </div>
               </motion.div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
@@ -92,12 +97,12 @@ export default function Spirulina() {
               transition={{ duration: 0.8 }}
             >
               <div className="relative">
-                <div className="bg-gradient-to-br from-green-500 to-emerald-600 rounded-2xl overflow-hidden aspect-square">
-                  <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1597074866923-dc0589150358?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center opacity-70"></div>
-                  <div className="absolute inset-0 bg-gradient-to-t from-green-900/70 to-transparent"></div>
-                  <div className="absolute inset-0 flex items-end p-8">
-                    <h3 className="text-2xl font-bold text-white">Arthrospira platensis</h3>
-                  </div>
+                <div className="  rounded-2xl overflow-hidden aspect-video">
+                  <div className="absolute inset-0 bg-[url('https://media.istockphoto.com/id/493996555/photo/spirulina-powder-algae-isolated-on-white-background-with-text-on.jpg?s=612x612&w=0&k=20&c=xObZKVE_OR5_GGgMbGtfIhF9cy1LZ8jADJkKpaY8GLs=')] bg-cover bg-center opacity-100"></div>
+                  <div className="absolute inset-0 "></div>
+                  {/* <div className="absolute inset-0 flex items-end p-8">
+                    <h3 className="text-2xl font-bold text-green-200">Arthrospira platensis</h3>
+                  </div> */}
                 </div>
                 
                 <div className="absolute -bottom-4 -right-4 bg-gradient-to-r from-amber-400 to-yellow-500 text-black px-6 py-3 rounded-lg shadow-lg">
@@ -152,12 +157,12 @@ export default function Spirulina() {
                 </div>
               </div>
             </motion.div>
-          </div>
+          </div>    
         </div>
       </section>
 
       {/* Cultivation Section */}
-      <section className="py-20 px-4 sm:px-6 md:px-12 lg:px-16 xl:px-20 bg-gradient-to-br from-green-50 to-emerald-50">
+      <section className="py-20 px-4 sm:px-6 md:px-12 lg:px-16 xl:px-20 bg-gradient-to-br from-green-50 to-emerald-100">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col lg:flex-row items-center gap-16">
             <motion.div 
@@ -204,9 +209,9 @@ export default function Spirulina() {
               transition={{ duration: 0.8, delay: 0.2 }}
             >
               <div className="relative">
-                <div className="bg-gradient-to-br from-green-600 to-emerald-700 rounded-2xl overflow-hidden aspect-video">
-                  <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1597074866923-dc0589150358?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center opacity-70"></div>
-                  <div className="absolute inset-0 bg-gradient-to-r from-green-900/70 to-transparent"></div>
+                <div className="rounded-2xl overflow-hidden aspect-video">
+                  <div className="absolute inset-0 bg-[url('https://www.spirulinanb.com/wp-content/uploads/Spirulina-nb-in-nagpur.jpg')] bg-cover bg-center opacity-80"></div>
+                  <div className="absolute inset-0"></div>
                   <div className="absolute inset-0 flex items-end p-8">
                     <h3 className="text-2xl font-bold text-white">Sustainable Cultivation Process</h3>
                   </div>
@@ -259,7 +264,7 @@ export default function Spirulina() {
             >
               <div className="relative h-96 rounded-2xl overflow-hidden shadow-xl">
                 <div className="absolute inset-0 bg-gradient-to-br from-green-500 to-emerald-600">
-                  <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1628026556770-15e5ac2a7ae4?q=80&w=2071&auto=format&fit=crop')] bg-cover bg-center opacity-80"></div>
+                  <div className="absolute inset-0 bg-[url('https://media.istockphoto.com/id/891344864/photo/organic-spirulina-and-chlorella-pills-in-a-wooden-bowl-isolated-on-white.jpg?s=612x612&w=0&k=20&c=sThn8eLIuiTRm6C_7JOjamqy3xjElHCTsyPv78am74M=')] bg-cover bg-center opacity-80"></div>
                   <div className="absolute inset-0 bg-gradient-to-t from-green-900/70 to-transparent"></div>
                 </div>
                 <div className="absolute bottom-0 left-0 right-0 p-6 text-center">
@@ -378,7 +383,7 @@ export default function Spirulina() {
             >
               <div className="relative h-96 rounded-2xl overflow-hidden shadow-xl">
                 <div className="absolute inset-0 bg-gradient-to-br from-amber-400 to-yellow-500">
-                  <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1597074866923-dc0589150358?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center opacity-80"></div>
+                  <div className="absolute inset-0 bg-[url('https://media.istockphoto.com/id/467934442/photo/white-bowl-of-green-spirulina-algae-powder-spilling-out.jpg?s=612x612&w=0&k=20&c=WhthN3lzmlu-Z7X5mcdQKkDA42mw3PYwsLRLHuoqdXY=')] bg-cover bg-center opacity-80"></div>
                   <div className="absolute inset-0 bg-gradient-to-t from-green-900/70 to-transparent"></div>
                 </div>
                 <div className="absolute bottom-0 left-0 right-0 p-6 text-center">
@@ -399,7 +404,7 @@ export default function Spirulina() {
             >
               <div className="relative h-96 rounded-2xl overflow-hidden shadow-xl">
                 <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-cyan-600">
-                  <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1597074866923-dc0589150358?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center opacity-80"></div>
+                  <div className="absolute inset-0 bg-[url('https://media.istockphoto.com/id/481035788/photo/green-medical-pills-on-white-background-isolate.jpg?s=612x612&w=0&k=20&c=gVjG8mU8kDIQ-Sdn48cnzsvbGwPi2srfiZJGG3poCuE=')] bg-cover bg-center opacity-80"></div>
                   <div className="absolute inset-0 bg-gradient-to-t from-green-900/70 to-transparent"></div>
                 </div>
                 <div className="absolute bottom-0 left-0 right-0 p-6 text-center">
@@ -462,79 +467,113 @@ export default function Spirulina() {
 
       {/* Packaging Section */}
       <section className="py-20 px-4 sm:px-6 md:px-12 lg:px-16 xl:px-20 bg-gradient-to-b from-white to-green-50">
-        <div className="max-w-7xl mx-auto">
-          <div className="flex flex-col lg:flex-row items-center gap-16">
-            <motion.div 
-              className="w-full lg:w-1/2"
-              initial={{ opacity: 0, x: -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8 }}
-            >
-              <div className="grid grid-cols-2 gap-6">
-                <div className="bg-gradient-to-br from-green-600 to-emerald-700 rounded-2xl overflow-hidden aspect-square"></div>
-                <div className="bg-gradient-to-br from-amber-400 to-yellow-500 rounded-2xl overflow-hidden aspect-square"></div>
-                <div className="bg-gradient-to-br from-blue-500 to-cyan-600 rounded-2xl overflow-hidden aspect-square"></div>
-                <div className="bg-gradient-to-br from-gray-300 to-gray-400 rounded-2xl overflow-hidden aspect-square flex items-center justify-center">
-                  <FaShippingFast className="text-4xl text-gray-600" />
-                </div>
-              </div>
-            </motion.div>
-            
-            <motion.div 
-              className="w-full lg:w-1/2"
-              initial={{ opacity: 0, x: 50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-            >
-              <div className="inline-flex items-center text-green-600 font-medium mb-4">
-                <div className="w-8 h-0.5 bg-green-500 mr-3"></div>
-                ECO-FRIENDLY PACKAGING
-              </div>
-              
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                Sustainable Packaging Solutions
-              </h2>
-              
-              <p className="text-gray-600 mb-6">
-                We package our premium spirulina products in environmentally friendly materials that preserve freshness while minimizing our ecological footprint.
-              </p>
-              
-              <div className="space-y-4 mb-8">
-                <div className="flex items-start">
-                  <div className="w-8 h-8 rounded-full bg-green-100 flex items-center justify-center mt-1 mr-3 flex-shrink-0">
-                    <FaLeaf className="text-green-500" />
-                  </div>
-                  <span className="text-gray-600"><span className="font-semibold">Recyclable Materials:</span> Glass jars and biodegradable pouches</span>
-                </div>
-                <div className="flex items-start">
-                  <div className="w-8 h-8 rounded-full bg-green-100 flex items-center justify-center mt-1 mr-3 flex-shrink-0">
-                    <FaCertificate className="text-green-500" />
-                  </div>
-                  <span className="text-gray-600"><span className="font-semibold">Quality Preservation:</span> UV-protected containers to maintain potency</span>
-                </div>
-                <div className="flex items-start">
-                  <div className="w-8 h-8 rounded-full bg-green-100 flex items-center justify-center mt-1 mr-3 flex-shrink-0">
-                    <FaShippingFast className="text-green-500" />
-                  </div>
-                  <span className="text-gray-600"><span className="font-semibold">Global Distribution:</span> Secure packaging for international shipping</span>
-                </div>
-              </div>
-              
-              <motion.a
-                href="/contact"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="inline-block bg-gradient-to-r from-green-500 to-emerald-600 text-white font-semibold px-8 py-3 rounded-lg shadow-lg"
-              >
-                Request Packaging Details
-              </motion.a>
-            </motion.div>
+  <div className="max-w-7xl mx-auto">
+    <div className="flex flex-col lg:flex-row items-center gap-16">
+      
+      {/* Left Side: Image Grid */}
+      <motion.div 
+        className="w-full lg:w-1/2"
+        initial={{ opacity: 0, x: -50 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8 }}
+      >
+        <div className="grid grid-cols-2 gap-6">
+          
+          {/* Image 1: Glass Jar */}
+          <div 
+            className="rounded-2xl overflow-hidden aspect-square bg-cover bg-center shadow-md"
+            style={{ backgroundImage: `url(${packagingImg1})` }}
+            aria-label="Spirulina glass jar packaging"
+          ></div>
+
+          {/* Image 2: Biodegradable Pouch */}
+          <div 
+            className="rounded-2xl overflow-hidden aspect-square bg-cover bg-center shadow-md"
+            style={{ backgroundImage: `url(${packagingImg2})` }}
+            aria-label="Biodegradable spirulina pouch"
+          ></div>
+
+          {/* Image 3: Product in Use / Lifestyle */}
+          <div 
+            className="rounded-2xl overflow-hidden aspect-square bg-cover bg-center shadow-md"
+            style={{ backgroundImage: `url(${packagingImg3})` }}
+            aria-label="Spirulina product in use"
+          ></div>
+
+          {/* Image 4: Shipping / Delivery Box */}
+          <div 
+            className="rounded-2xl overflow-hidden aspect-square bg-cover bg-center shadow-md flex items-center justify-center bg-gray-50"
+            style={{ backgroundImage: `url(${packagingImg4})` }}
+            aria-label="Eco-friendly shipping box"
+          >
+            {/* Optional: Keep icon if image is missing */}
+            {/* <FaShippingFast className="text-4xl text-gray-400" /> */}
+          </div>
+
+        </div>
+      </motion.div>
+
+      {/* Right Side: Content */}
+      <motion.div 
+        className="w-full lg:w-1/2"
+        initial={{ opacity: 0, x: 50 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8, delay: 0.2 }}
+      >
+        <div className="inline-flex items-center text-green-600 font-medium mb-4">
+          <div className="w-8 h-0.5 bg-green-500 mr-3"></div>
+          ECO-FRIENDLY PACKAGING
+        </div>
+        
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+          Sustainable Packaging Solutions
+        </h2>
+        
+        <p className="text-gray-600 mb-6">
+          We package our premium spirulina products in environmentally friendly materials that preserve freshness while minimizing our ecological footprint.
+        </p>
+        
+        <div className="space-y-4 mb-8">
+          <div className="flex items-start">
+            <div className="w-8 h-8 rounded-full bg-green-100 flex items-center justify-center mt-1 mr-3 flex-shrink-0">
+              <FaLeaf className="text-green-500" />
+            </div>
+            <span className="text-gray-600">
+              <span className="font-semibold">Recyclable Materials:</span> Glass jars and biodegradable pouches
+            </span>
+          </div>
+          <div className="flex items-start">
+            <div className="w-8 h-8 rounded-full bg-green-100 flex items-center justify-center mt-1 mr-3 flex-shrink-0">
+              <FaCertificate className="text-green-500" />
+            </div>
+            <span className="text-gray-600">
+              <span className="font-semibold">Quality Preservation:</span> UV-protected containers to maintain potency
+            </span>
+          </div>
+          <div className="flex items-start">
+            <div className="w-8 h-8 rounded-full bg-green-100 flex items-center justify-center mt-1 mr-3 flex-shrink-0">
+              <FaShippingFast className="text-green-500" />
+            </div>
+            <span className="text-gray-600">
+              <span className="font-semibold">Global Distribution:</span> Secure packaging for international shipping
+            </span>
           </div>
         </div>
-      </section>
-
+        
+        <motion.a
+          href="/contact"
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          className="inline-block bg-gradient-to-r from-green-500 to-emerald-600 text-white font-semibold px-8 py-3 rounded-lg shadow-lg"
+        >
+          Request Packaging Details
+        </motion.a>
+      </motion.div>
+    </div>
+  </div>
+</section>
       {/* CTA Section */}
       <section className="py-20 px-4 sm:px-6 md:px-12 lg:px-16 xl:px-20 bg-gradient-to-r from-green-700 to-emerald-800 text-white">
         <div className="max-w-7xl mx-auto text-center">

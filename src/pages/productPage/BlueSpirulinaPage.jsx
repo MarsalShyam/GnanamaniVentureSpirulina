@@ -6,7 +6,7 @@ export default function BlueSpirulinaPage() {
     <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
       {/* Hero Section */}
       <section className="relative py-20 md:py-32 px-4 sm:px-6 md:px-12 lg:px-16 xl:px-20 overflow-hidden bg-gradient-to-r from-blue-900 to-cyan-800 text-white">
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1597074866923-dc0589150358?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center opacity-30"></div>
+        <div className="absolute inset-0 bg-[url('https://media.istockphoto.com/id/2155596725/photo/organic-blue-spirulina-powder-in-a-white-ceramic-bowl-side-view-copy-space-superfood-powder.webp?a=1&b=1&s=612x612&w=0&k=20&c=w7X21CaBMaa_-PyKBviyaDY_34MGA2YbUGWW5JnLpT8=')] bg-cover bg-center opacity-30"></div>
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="flex flex-col lg:flex-row items-center gap-12">
             <div className="flex-1">
@@ -50,29 +50,6 @@ export default function BlueSpirulinaPage() {
                   >
                     View Benefits
                   </motion.a>
-                </div>
-              </motion.div>
-            </div>
-            
-            <div className="flex-1 flex justify-center">
-              <motion.div
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.8 }}
-                className="relative w-full max-w-lg"
-              >
-                <div className="bg-gradient-to-br from-blue-700 to-cyan-800 rounded-3xl overflow-hidden shadow-2xl">
-                  <div className="aspect-square w-full bg-gradient-to-b from-cyan-800 to-blue-900 flex items-center justify-center">
-                    <div className="text-center p-8">
-                      <div className="inline-flex items-center justify-center bg-white/20 backdrop-blur-sm p-6 rounded-full mb-6">
-                        <FaFlask className="text-4xl text-white" />
-                      </div>
-                      <h3 className="text-2xl font-bold mb-4">Pure Phycocyanin Extract</h3>
-                      <p className="text-blue-100 max-w-md mx-auto">
-                        Vibrant blue color with exceptional health benefits
-                      </p>
-                    </div>
-                  </div>
                 </div>
               </motion.div>
             </div>

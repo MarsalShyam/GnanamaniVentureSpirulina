@@ -132,7 +132,7 @@ export default function QualityPage() {
 
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-[#f0f8f0] to-[#e0f0e0] pt-18 pb-16">
+    <div className="min-h-screen bg-gradient-to-b from-[#f0f8f0] to-[#e0f0e0] pt-16 md:pt-18 pb-16">
       {/* Hero Section */}
       <section className="relative py-16 md:py-24 px-4 md:px-8 overflow-hidden">
         <div className="absolute inset-0 bg-green-900/10 z-0">
