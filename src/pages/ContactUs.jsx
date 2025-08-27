@@ -1,8 +1,9 @@
 import { useState } from "react";
 import { FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 
-const API_BASE = import.meta.env.VITE_API_BASE || "https://gnanamani-venture-spirulina.vercel.app/"; // set this
+const API_BASE = import.meta.env.VITE_API_BASE || "https://gnanamani-venture-spirulina.vercel.app";
 const CONTACT_API = `${API_BASE}/api/contact`;
+
 
 export default function ContactUs() {
   const [formData, setFormData] = useState({
